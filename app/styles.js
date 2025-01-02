@@ -10,6 +10,9 @@ const defaultStyles = StyleSheet.create({
     titleContainer: {
         height: 50,
     },  
+    smContainer: {
+        height: 50,
+    },
     lgContainer: {
         height: 300,
     },
@@ -47,8 +50,8 @@ const defaultStyles = StyleSheet.create({
     deckCol: {
         flex: 1,
         flexDirection: 'column',
-        padding: 5, 
-        gap: 15,      
+        padding: 10, 
+        gap: 15,  
     },
     cardWrapper: {
         borderRadius: 32,
@@ -79,7 +82,7 @@ const defaultStyles = StyleSheet.create({
         flexDirection: 'row'
     },
     barWrapper: {
-        borderRadius: 32,
+
         backgroundColor: 'transparent',
         shadowColor: '#000',
         shadowOffset: {
@@ -89,7 +92,9 @@ const defaultStyles = StyleSheet.create({
         shadowOpacity: 0.22,
         shadowRadius: 2.22,
         elevation: 5,
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginBottom: 10,
+        borderRadius: 32,
     },
     centerCardWrapper: {
         borderRadius: 32,
@@ -114,6 +119,9 @@ const defaultStyles = StyleSheet.create({
         padding: 10,
         height: 100,
     },  
+    lgBar: {
+        height: 180
+    },
     card: {
         flex:1,
         backgroundColor: 'white',
@@ -145,6 +153,19 @@ const defaultStyles = StyleSheet.create({
     margined: {
         margin:50,
     },
+    imageContained: {
+        flex:1,
+        height:'100%'
+    },
+    smLeft: {
+        flex: 1
+    },
+    lgRight: {
+        flex: 3
+    },
+    roundedCorner: {
+        borderRadius: 16 
+    }
 })
 
 const fonts = StyleSheet.create({
@@ -197,4 +218,12 @@ const backgrounds = StyleSheet.create({
     }
 })
 
-export { defaultStyles, fonts, backgrounds }
+const collectionItems = StyleSheet.create({
+    coachCard: {
+        flexDirection: 'row',
+        padding: 20,
+        gap: 10,
+    }
+})
+
+export { defaultStyles, fonts, backgrounds, collectionItems }
