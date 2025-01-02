@@ -6,7 +6,7 @@ import { Button, Searchbar } from 'react-native-paper';
 import { defaultStyles, fonts } from '../styles';
 import { loadFonts } from '../utils/fonts';
 
-function WelcomeScreen(props) {
+function Welcome(props) {
     const [searchQuery, setSearchQuery] = React.useState('');
 
     useEffect(() => {
@@ -81,4 +81,4 @@ function WelcomeScreen(props) {
     );
 }
 
-export default WelcomeScreen;
+export default Welcome;
