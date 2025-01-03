@@ -206,7 +206,7 @@ const defaultStyles = StyleSheet.create({
         gap: 20,
     },
     formInput: {
-        height: 50,
+        height: 60,
         width: '100%',
         marginVertical: 10,
     },

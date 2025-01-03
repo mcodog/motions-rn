@@ -9,7 +9,7 @@ import { defaultStyles, fonts } from '../../styles'
 import { TextInput, Button, Divider } from 'react-native-paper'
 import DividerWithText from '../../components/DividerWithText'
 
-const Login = () => {
+const Register = () => {
     useEffect(() => {
         loadFonts();
     }, [])
@@ -18,6 +18,14 @@ const Login = () => {
         <View style={defaultStyles.container}>
             <View style={[defaultStyles.fluidContainer, defaultStyles.xyCenter]}>
                 <View style={[defaultStyles.loginContainer]}>
+                    <View style={defaultStyles.spaced}>
+                        <Text style={[ fonts.xlFont, fonts.emphasize, { textAlign: 'center' } ]}>
+                            Create an Account
+                        </Text>
+                    </View>
+                    <View style={defaultStyles.spaced}>
+                        <Divider />
+                    </View>
                     <View style={[defaultStyles.formInput, defaultStyles.row, {height: 60}]}>
                         <TextInput style={[{ flex: 1 }]} mode="outlined" label="First Name"  />
                         <TextInput style={[{ flex: 1 }]} mode="outlined" label="Last Name"  />
@@ -32,37 +40,15 @@ const Login = () => {
                         <Button 
                             contentStyle={{ height: 50 }} 
                             labelStyle={{ fontSize: 16, color: 'white' }}  style={{flex: 1, backgroundColor: '#663399'}} mode="elevated">
-                                Login
+                                Sign Up
                         </Button>
                         <Button 
                             style={[{ flex: 1, borderWidth: 2, borderColor: '#663399' }]} 
                             contentStyle={{ height: 50 }} 
                             labelStyle={{ fontSize: 16 }}
                             mode="outlined">
-                                Sign Up
+                                Go Back
                         </Button>    
-                    </View>
-                    <View style={[defaultStyles.spaced]}>
-                        <DividerWithText text="OR" />
-                    </View>
-                    <View style={[defaultStyles.smSpaced]}>
-                        <Text style={fonts.center}>Continue with the following:</Text>
-                    </View>
-                    <View style={[defaultStyles.spaced, defaultStyles.row]}>
-                        <Button
-                            mode="elevated"
-                            icon="google"
-                            style={{ flex: 1 }}
-                        >
-                            Google
-                        </Button>
-                        <Button
-                            mode="elevated"
-                            icon="facebook"
-                            style={{ flex: 1 }}
-                        >
-                            Facebook
-                        </Button>
                     </View>
                 </View>
 
@@ -71,4 +57,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Register

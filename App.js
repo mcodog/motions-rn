@@ -6,6 +6,7 @@ import Welcome from './app/screens/Welcome';
 import Profile from './app/screens/Profile';
 import Shop from './app/screens/Shop';
 import Login from './app/screens/auth/login';
+import Register from './app/screens/auth/register';
 
 import Product from './app/screens/product/[id]';
 
@@ -19,7 +20,7 @@ export default function App() {
   
   return (
     <SafeAreaProvider>
-      <Login id={123} />
+      <Register id={123} />
     </SafeAreaProvider>
     
   );
