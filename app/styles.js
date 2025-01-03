@@ -4,7 +4,7 @@ const defaultStyles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#f7f6fb',
-        padding: 10,
+        padding: 30,
         paddingTop: StatusBar.currentHeight ? StatusBar.currentHeight + 20 : 20,       
     },
     titleContainer: {
@@ -17,7 +17,7 @@ const defaultStyles = StyleSheet.create({
         height: 300,
     },
     xlContainer: {
-        height: 400,
+        height: 520,
     },
     fluidContainer: {
         flex: 1
@@ -37,10 +37,18 @@ const defaultStyles = StyleSheet.create({
     },
     alignCenter: {
         alignItems: 'center'
-    },  
+    }, 
+    smSpaced: {
+        marginTop: 5,
+        marginBottom: 5
+    } ,
     spaced: {
         marginTop: 10,
         marginBottom: 10
+    },
+    lgSpaced: {
+        marginTop: 20,
+        marginBottom: 20
     },
     deckRow: {
         flexDirection: 'row',
@@ -51,7 +59,7 @@ const defaultStyles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         padding: 10, 
-        gap: 15,  
+        gap: 10,  
     },
     cardWrapper: {
         borderRadius: 32,
@@ -82,7 +90,6 @@ const defaultStyles = StyleSheet.create({
         flexDirection: 'row'
     },
     barWrapper: {
-
         backgroundColor: 'transparent',
         shadowColor: '#000',
         shadowOffset: {
@@ -110,6 +117,20 @@ const defaultStyles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         margin:50,
+    },
+    displayCardWrapper: {
+        borderRadius: 32,
+        backgroundColor: 'transparent',
+        shadowColor: '#000',
+        shadowOffset: {
+          width: 0,
+          height: 1,
+    },
+        shadowOpacity: 0.22,
+        shadowRadius: 2.22,
+        elevation: 5,
+        flex: 1,
+        flexDirection: 'row',
     },
     bar: {
         flex: 1,
@@ -165,6 +186,23 @@ const defaultStyles = StyleSheet.create({
     },
     roundedCorner: {
         borderRadius: 16 
+    },
+    row: {
+        flexDirection: 'row',
+    },
+    spannedRow: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        gap: 80,
+        width: '100%',
+    },
+    iconTile: {
+        textAlign: 'center'
+    },
+    navigationTabs: {
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        gap: 20,
     }
 })
 
@@ -187,7 +225,8 @@ const fonts = StyleSheet.create({
     },
 
     emphasize: {
-        fontFamily: 'heavitas'
+        fontFamily: 'heavitas',
+        // fontSize:60
     },
     bold: {
         fontWeight: 800,
@@ -203,6 +242,15 @@ const fonts = StyleSheet.create({
     },
     center: {
         textAlign: 'center',
+    }, 
+    centerTitle: {
+        flex: 1,
+        textAlign: 'center', 
+        padding: 10,
+        fontWeight: 800,
+    },
+    active: {
+        color: 'black'
     }
 })
 
@@ -223,6 +271,10 @@ const collectionItems = StyleSheet.create({
         flexDirection: 'row',
         padding: 20,
         gap: 10,
+    },
+    displayCard: {
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 })
 

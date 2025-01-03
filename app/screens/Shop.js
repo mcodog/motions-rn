@@ -149,14 +149,14 @@ export default function Shop() {
             <Chip  onPress={() => console.log('Pressed')}>Calisthenics</Chip>
         </View>
         <View style={[defaultStyles.fluidContainer, defaultStyles.deckCol]}>
-                <FlatList
-                    style={{ padding: 5 }}
-                    data={sampleData}
-                    keyExtractor={(item, index) => index.toString()} 
-                    renderItem={renderItem}
-                    scrollEnabled={false}
-                    // contentContainerStyle={styles.list}
-                />
+            <FlatList
+                style={{ padding: 5 }}
+                data={sampleData}
+                keyExtractor={(item, index) => index.toString()} 
+                renderItem={renderItem}
+                scrollEnabled={false}
+                // contentContainerStyle={styles.list}
+            />
         </View>
       </ScrollView>
     </View>
