@@ -6,7 +6,7 @@ import { collectionItems, defaultStyles, fonts } from '../../styles'
 import { loadFonts } from '../../utils/fonts'
 
 //Package Components
-import { Appbar, Avatar, Button  } from 'react-native-paper';
+import { Appbar, Avatar, Button, Card  } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const plans = [
@@ -41,12 +41,13 @@ const Product = ({ id }) => {
     });
 
     const renderItems = ({ item }) => (    
-        <View style={[defaultStyles.barWrapper]}>  
-            <View style={[defaultStyles.bar, {height: 180, padding: 20}]}>
-                <Text style={[fonts.lgFont, fonts.bold, {textAlign: 'center'}]}>
-                    {item.name}
-                </Text>
-            </View>
+        <View style={[defaultStyles.barWrapper, { gap: 15 }]}>  
+            <Card style={[defaultStyles.bar, {height: 180, padding: 0}]}>
+                <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
+                <View style={{borderRadius: 16,padding: 10, paddingLeft: 30, paddingRight: 30,position: 'absolute', bottom: 20, left:20, color: 'white', backgroundColor: 'rgba(102, 51, 153, .35),', maxWidth:'90%'}}>
+                    <Text style={[{color:'white'}, fonts.mdFont]}>Simple Package</Text>
+                </View>
+            </Card>
         </View>
     )
     

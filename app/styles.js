@@ -189,6 +189,7 @@ const defaultStyles = StyleSheet.create({
     },
     row: {
         flexDirection: 'row',
+        gap:10,
     },
     spannedRow: {
         flexDirection: 'row',
@@ -203,6 +204,14 @@ const defaultStyles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'flex-start',
         gap: 20,
+    },
+    formInput: {
+        height: 50,
+        width: '100%',
+        marginVertical: 10,
+    },
+    loginContainer: {
+        width: '80%'
     }
 })
 

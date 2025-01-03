@@ -5,6 +5,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Welcome from './app/screens/Welcome';
 import Profile from './app/screens/Profile';
 import Shop from './app/screens/Shop';
+import Login from './app/screens/auth/login';
 
 import Product from './app/screens/product/[id]';
 
@@ -18,7 +19,7 @@ export default function App() {
   
   return (
     <SafeAreaProvider>
-      <Product id={123} />
+      <Login id={123} />
     </SafeAreaProvider>
     
   );
